@@ -1,0 +1,47 @@
+.header { 
+    background-color: pink;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header > img{
+   object-fit: contain;
+   height: 100px;
+}
+.header__menu {
+    align-self: center;
+}
+.header__menu > ul {
+    display: flex;
+    list-style: none;
+    width: 450px;
+    justify-content: space-between;
+     
+}
+
+.header__menu > ul > li {
+    padding-left: 10px;
+}
+.header__contact {
+    align-self: center;
+    border: 1px solid black;
+    padding: 15px 15px;
+    cursor: pointer;
+    background-color:blue;
+    color:white;
+    border-radius: 5px;
+}
+
+.header__contact:hover {
+    background-color:red;
+    color: green;
+}
+
+
+
+@media only screen and (min-width: 400px) {
+    .header__menu{
+        display:none;
+    }
+  }
